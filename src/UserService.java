@@ -6,6 +6,8 @@ public class UserService {
             return "INVALID_USER";
         }
 
-        return "USER_LOOKUP_SUCCESS:" + userId;
+        String message = "USER_LOOKUP_SUCCESS:" + userId;
+        System.out.println("[AUDIT] " + message);
+        return message;
     }
 }
